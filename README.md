@@ -12,9 +12,9 @@ A open test framework and speed comparison of seven card poker hand evaluators i
 
 ##What do I do with it?
 
-1. [View existing results](wiki/Results.md)
+1. [View existing results](wiki/results)
 
-      ![Sample Results](results.png "Example")
+      ![Sample Results](https://cloud.githubusercontent.com/assets/3831873/7672694/25aff802-fcca-11e4-8fb9-9cfe26a323ea.png "Example")
 
 2. [Contribute test results from your machine](howtoruntests.md)
 
