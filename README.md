@@ -55,5 +55,5 @@ There is a script to collect and plot the results. `python plot.py trials`
 
 
 ### Licence
-The PET code is open source, available under the terms of the MIT Licence (see LICENCE).  Individual evaluators are licenced under their original terms, see README files in each subidrectory.
+The PET code is open source, available under the terms of the MIT License (see LICENSE).  Individual evaluators are licenced under their original terms, see README files in each subidrectory.
 
