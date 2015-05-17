@@ -1,0 +1,22 @@
+--- index52c7.h.orig	2015-05-14 20:15:35.222655700 -0400
++++ index52c7.h	2015-05-14 20:16:53.618324782 -0400
+@@ -5,8 +5,6 @@
+ // Senzee 5
+ // http://senzee.blogspot.com 
+ 
+-namespace
+-{
+ 
+ const unsigned _choose16x[] = { 1, 16, 120, 560, 1820, 4368, 8008, 11440 };
+ const unsigned _choose32x[] = { 1, 32, 496, 4960, 35960, 201376, 906192, 3365856 };
+@@ -4144,9 +4142,8 @@
+     0,     1,      0,      0,       0,       0,       0,       0,       0, 0, 0, 0, 0, 0, 0, 0
+ };
+ 
+-}
+ 
+-inline unsigned index52c7(unsigned __int64 x)
++inline unsigned index52c7(uint64_t x)
+ {
+     const unsigned short *a = (const unsigned short *)&x;
+     unsigned A    = a[3],                B    = a[2],                        C    = a[1],            D   = a[0],
