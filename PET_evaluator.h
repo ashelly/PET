@@ -48,6 +48,10 @@
 #include "hammer/HAM_eval.h"
 #define EUT HAM
 
+#elif TESTSPK
+#include "specialk/SPK_eval.h"
+#define EUT SPK
+
 /*Copy the following 3 lines, paste above this, and replace 'XXX' and 'newdir' */
 #elif TESTXXX
 #include "newdir/XXX_eval.h"

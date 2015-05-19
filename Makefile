@@ -53,5 +53,16 @@ ham_table1.dat:
 	cp hammer/source/handeval/eqcllist ./ham_table1.dat && cp hammer/source/handeval/carddag ./ham_table2.dat
 
 
+specialk/libspecialk.a:
+	g++ -c specialk/SPK_eval.cpp -o  specialk/SPK_eval.o
+	g++ -c specialk/source/SevenEval.cpp  -o specialk/SevenEval.o 
+	g++ -c specialk/source/FiveEval.cpp  -o specialk/FiveEval.o 
+	ar crf specialk/libspecialk.a specialk/SevenEval.o specialk/FiveEval.o  specialk/SPK_eval.o
+
+
+spk: specialk/libspecialk.a
+	g++ -DTESTSPK=1 -lstdc++  $(LIBS) $(FLAGS) -x c speed_test.c  -Lspecialk -lspecialk  -Ispecialk/source -ospk
+
+
 clean:
 	rm ???
